@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ESTILO -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- FONTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&family=Roboto:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <title>Conversor de Moedas</title>
+</head>
+
+<body>
+
+    <main>
+        <img src="assets/images/logo.svg" alt="Convert logo" />
+
+        <header>
+            <span>R$</span>
+            <h1 id="result">0,00</h1>
+        </header>
+
+        <form>
+            <div>
+                <label for="currency">moeda</label>
+                <div class="field">
+                    <span><img src="assets/images/wallet.svg" alt=""></span>
+                    <select name="currency" id="currency" required>
+                        <option value="" disabled selected hidden>Selecione a moeda</option>
+                        <option value="USD">Dólar Americano</option>
+                        <option value="EUR">Euro</option>
+                        <option value="GBP">Libra Esterlina</option>
+                    </select>
+                </div>
+                <div class="currency-price" id="price"></div>
+            </div>
+
+            <div>
+                <label for="amount">Valor desejado</label>
+                <div class="field">
+                    <span id="currency-symbol"></span>
+                    <input type="text" name="amount" id="amount" required />
+                </div>
+            </div>
+
+            <button type="submit">Converter em reais</button>
+        </form>
+
+        <footer>
+            Feito com ❤ por <a href="https://linktr.ee/anacquesta" target="_blank">Carol Gonzaga</a>
+        </footer>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
