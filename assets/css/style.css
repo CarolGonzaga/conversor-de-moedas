@@ -12,12 +12,27 @@ main {
   justify-content: space-between;
 }
 
-img[src*="logo"] {
-  border-radius: 2rem;
-  padding: .1rem .3rem;
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
 }
 
-header {
+header img[src*="logo"] {
+  padding: .1rem .3rem;
+  width: 50%;
+}
+
+header .description {
+  color: var(--blue-700);
+  font-size: 0.7rem;
+  margin-bottom: .5rem;
+  text-align: center;
+}
+
+section {
   width: 100%;
   height: 10%;
   margin-block: 1rem 2rem;
@@ -27,13 +42,13 @@ header {
   align-items: flex-end;
 }
 
-header span {
+section span {
   color: var(--blue-100);
   font-weight: 500;
   font-size: 1.5rem;
 }
 
-header h1 {
+section h1 {
   color: var(--white);
   font-weight: 700;
   font-size: 4rem;
@@ -59,8 +74,8 @@ form>div {
 
 label {
   font-size: 0.75rem;
-  color: var(--blue-100);
-  text-transform: uppercase;
+  color: var(--white);
+  text-transform: capitalize;
 }
 
 input,
@@ -93,7 +108,7 @@ select {
 input::placeholder,
 select:invalid,
 option {
-  color: var(--blue-100);
+  color: var(--blue-700);
 }
 
 input:focus,

@@ -21,16 +21,21 @@
 <body>
 
     <main>
-        <img src="assets/images/logo.svg" alt="Convert logo" />
-
         <header>
+            <img src="assets/images/logo.svg" alt="Convert logo" />
+            <p class="description">
+                Converta valores em dólar, euro ou libra esterlina diretamente para reais (R$).
+            </p>
+        </header>
+
+        <section>
             <span>R$</span>
             <h1 id="result">0,00</h1>
-        </header>
+        </section>
 
         <form>
             <div>
-                <label for="currency">moeda</label>
+                <label for="currency">moeda de destino</label>
                 <div class="field">
                     <span><img src="assets/images/wallet.svg" alt=""></span>
                     <select name="currency" id="currency" required>
@@ -44,14 +49,14 @@
             </div>
 
             <div>
-                <label for="amount">Valor desejado</label>
+                <label for="amount">Digite o valor para converter</label>
                 <div class="field">
                     <span id="currency-symbol"></span>
-                    <input type="text" name="amount" id="amount" required />
+                    <input type="number" name="amount" id="amount" placeholder="Ex: 100" required />
                 </div>
             </div>
 
-            <button type="submit">Converter em reais</button>
+            <button type="submit">Converter para Reais BRL</button>
         </form>
 
         <footer>
